@@ -1,0 +1,10 @@
+<div class="pokemoncard">
+    <div class="box" *ngFor="let pokemon of pokemons">
+      <div (click)="showDetails(pokemon.name)">
+        <h2>{{pokemon.name}}</h2>
+        <img [src]="pokemon.sprites.front_default" alt="pokemonimg">
+        <h2><a class="card-link stretched-link" (click)="showDetails(pokemon)"></a></h2> 
+        <a routerLink="/pokedetails/{{pokemon.id}}">Szczegóły: {{pokemon.name}}</a>     
+      </div>
+    </div>
+</div>

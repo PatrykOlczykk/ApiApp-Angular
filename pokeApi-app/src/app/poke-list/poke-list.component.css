@@ -1,0 +1,15 @@
+.pokemoncard {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+  background-color: lightblue;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+}

@@ -1,0 +1,9 @@
+<div class="pokemon">
+    <img [src]="pokemonDetails.sprites.front_default" alt="{{ pokemonDetails.name }}">
+    <h4>Nazwa: {{pokemonDetails.name}}</h4>
+    <h4>Wysokość: {{pokemonDetails.height}}</h4>
+    <h4>Życie: {{pokemonDetails.stats[0].base_stat}}</h4>
+    <ul><p>Ataki:</p>
+      <li *ngFor="let move of pokemonDetails.moves">{{move.move.name}}</li>
+    </ul>
+  </div>
